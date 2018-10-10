@@ -6,7 +6,7 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
-input[type=text], select, textarea {
+input[type=text], select, textarea, div.checkboxes {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -54,10 +54,12 @@ input[type=submit]:hover {
       <option value="usa">USA</option>
     </select>
 
-    <label for="cbox">Remember?</label>
-    <input id="cbox" type="checkbox" name="checkbox">
-
-    <label for="subject">Subject</label>
+	<div class="checkboxes">
+		<label for="cbox">Remember?</label>
+		<input id="cbox" type="checkbox" name="checkbox">
+	</div>
+    
+	<label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
